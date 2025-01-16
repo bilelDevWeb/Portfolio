@@ -45,6 +45,7 @@ nav a:hover{
     overflow: hidden;
     margin-top: 15px;
     margin-bottom: 15px;
+    
 }
 
 figure{
@@ -52,6 +53,8 @@ figure{
     left: 0;
     width: 400%;
     animation: 10s slide infinite;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .slide{
@@ -196,6 +199,7 @@ header h1 {
     background-image: linear-gradient(blue, red);
     text-align: center;
     border-bottom: 2px solid black;
+    margin: 50px;
    
    
 }
@@ -250,15 +254,21 @@ header h1 {
 }
 
 .com{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     background-image: linear-gradient(red, white);
     animation: slide linear;
     animation-timeline: view();
     animation-range-start: cover 0%;
     animation-range-end: cover 30%;
+    margin: 50px;
+    text-align: center;
     
     
+    
+}
+
+.com article{
+    margin: 10px;
 }
 
 
@@ -412,6 +422,7 @@ article p {
     animation-timeline: view();
     animation-range-start: cover 0%;
     animation-range-end: cover 30%;
+    margin: 50px;
     
 } 
 
@@ -576,9 +587,9 @@ ul{
 }
 
 .js{
-    width: 300px;
+    width: 350px;
     height: 300px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .html{
@@ -594,6 +605,7 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    margin: 50px;
 }
 
 
@@ -688,6 +700,7 @@ form {
     animation-timeline: view();
     animation-range-start: cover 0%;
     animation-range-end: cover 30%;
+    margin: 50px;
 }
 
 
