@@ -248,7 +248,7 @@ header h1 {
 
 .com{
     display: flex;
-    margin-left: 10px;
+    margin-left: 200px;
     animation: reveal linear;
     animation-timeline: view();
     animation-range-start: cover 0%;
@@ -672,7 +672,7 @@ ul li a{
 
 form {
     background-color: #07a3f8;
-    margin-left: 650px;
+    margin-left: 750px;
     font-size: 10px;
     width: 300px;
     padding: 20px;
@@ -798,7 +798,7 @@ form {
         text-align: center;
         margin-top: 10px;
     }
-    
+
     .article11{
         margin-bottom: 20px;
     }
