@@ -6,7 +6,6 @@
 
 body {
     font-family: 'inter', sans-serif;
-    background-image: url("../img/developpeur_full_stack_.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: #333;
@@ -15,127 +14,29 @@ body {
 
 /* Header */
 header {
-    background: black; 
+    background: #07a3f8; 
     color: white;
-    padding: 20px 10%;
+    padding: 50px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     top: 0;
     z-index: 1000;
+    
 }
 
 
 nav a{
     text-decoration: none;
-    color: bisque;
+    color: white;
     padding: 10px;
     transition: color 0.3s, transform 0.3s;
    
 }
 
 nav a:hover{
-    color: #007BFF;
+    color: #07a3f8;
     transform: scale(1.1);
-}
-
-.slider{
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    
-}
-
-figure{
-    position: relative;
-    left: 0;
-    width: 400%;
-    animation: 10s slide infinite;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.slide{
-    position: relative;
-    width: 25%;
-    float: left;
-}
-
-.slide h1{
-    position: absolute;
-    font-size: 3em;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    color: white;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
-}
-
-.slide img{
-    width: 100%;
-    height: 500px;
-}
-
-@keyframes slide{
-    0%{
-        left:0;
-    }
-
-    10%{
-        left:0;
-    }
-
-    20%{
-        left:-100%;
-    }
-
-    30%{
-        left:-100%;
-    }
-
-    40%{
-        left:-200%;
-    }
-
-    50%{
-        left:-200%;
-    }
-
-    55%{
-        left:-300%;
-    }
-
-    65%{
-        left:-300%;
-    }
-
-    66%{
-        left:-200%;
-    }
-
-    74%{
-        left:-200%;
-    }
-
-    75%{
-        left:-100%;
-    }
-
-    85%{
-        left:-100%;
-    }
-
-    90%{
-        left:0;
-    }
-
-    1000%{
-        left:0;
-    }
-
-
 }
 
 .ap{
@@ -171,13 +72,99 @@ header h1 {
     margin-right: 50px;
 }
 
-.com{
-    background-color: gainsboro;
+.slider{
+    width: 100%;
+    min-height: 80vh;
+    aspect-ratio: 16/9;
+    background-color: black;
+    position: relative;
 }
 
-.one{
+.slider-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.slider-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+
+.titre{
+    color: #fff;
+    font-size: 4rem;
+}
+
+.slider-content p{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.onepiece{
     width: 250px;
     height: 250px;
+    display: block;
+    background-color: #07a3f8;
+    color: #fff;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
+    margin: 50px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.pokemons{
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-color: #07a3f8;
+    color: #fff;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
+    margin: 50px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.todolist{
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-color: #07a3f8;
+    color: #fff;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
+    margin: 50px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.todo{
+    width: 100px;
+    height: 100px;
 }
 
 .to{
@@ -185,21 +172,25 @@ header h1 {
     height: 250px;
 }
 
-.hand{
-    width: 250px;
-    height: 250px;
+.pokemon{
+    width: 100px;
+    height: 100px;
 }
 
-.ordi{
-    width: 250px;
-    height: 250px;
-}
 
-.pro{
-    background-image: linear-gradient(blue, red);
+
+.pro article{
     text-align: center;
-    border-bottom: 2px solid black;
+    background-color: #07a3f8;
     margin: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+   
    
    
 }
@@ -228,8 +219,7 @@ header h1 {
 
 .ti{
     text-align: center;
-    background-color: black;
-    color: white;
+    color: #07a3f8;
     font-size: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -240,9 +230,12 @@ header h1 {
     
 }
 
-.article11{
-    margin-bottom: 20px;
+.titre1{
+    color: #07a3f8;
+    text-align: center;
+    margin-top: 50px;
 }
+
 
 .ti p{
     font-size: 30px;
@@ -255,20 +248,15 @@ header h1 {
 
 .com{
     display: flex;
-    background-image: linear-gradient(red, white);
-    animation: slide linear;
+    margin-left: 10px;
+    animation: reveal linear;
     animation-timeline: view();
     animation-range-start: cover 0%;
-    animation-range-end: cover 30%;
-    margin: 50px;
-    text-align: center;
-    
-    
-    
+    animation-range-end: contain 50%;
 }
 
 .com article{
-    margin: 10px;
+    margin: 50px;
 }
 
 
@@ -301,7 +289,8 @@ article p {
 
 .article1{
     margin-bottom: 40px;
-    background: red;
+    background: #07a3f8;
+    color: white;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -310,6 +299,10 @@ article p {
     transition: transform 0.3s ease, filter 0.3s ease;
     margin-top: 10px;
     margin-left: 10px;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
   
    
 }
@@ -322,7 +315,9 @@ article p {
 
 .article7{
     margin-bottom: 40px;
-    background: black;
+    padding-bottom: 20px;
+    background: #07a3f8;
+    color: white;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -332,17 +327,25 @@ article p {
     margin-top: 10px;
     margin-left: 10px;
     color: white;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
    
    
 }
 
 .m{
-    color: white;
+    color: black;
+}
+
+.l{
+    color: #fff;
 }
 
 .article9{
     margin-bottom: 40px;
-    background: blue;
+    background: #07a3f8;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -352,6 +355,10 @@ article p {
     margin-top: 10px;
     margin-left: 10px;
     color: white;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
 
 }
 
@@ -372,9 +379,15 @@ article p {
     margin-left: 100px;
 }
 
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
 .article10{
     margin-bottom: 40px;
-    background: linear-gradient(white, blue);
+    background:white;
+    border: #07a3f8 solid 10px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -383,6 +396,10 @@ article p {
     transition: transform 0.3s ease, filter 0.3s ease;
     margin-top: 10px;
     margin-left: 10px;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
 }
 
 .article10:hover{
@@ -397,15 +414,21 @@ article p {
 
 .article8{
     margin-bottom: 40px;
-    background: linear-gradient(white, blue);
-    border-radius: 10px;
+    padding-bottom: 10px;
+    background:white;
+    border: #07a3f8 solid 10px;
+    border-radius: 15px;
+    margin-right: 15px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 450px;
     height: 450px;
     transition: transform 0.3s ease, filter 0.3s ease;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 10px;animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
    
 }
 
@@ -423,6 +446,7 @@ article p {
     animation-range-start: cover 0%;
     animation-range-end: cover 30%;
     margin: 50px;
+    border: #07a3f8 solid 10px;
     
 } 
 
@@ -455,7 +479,8 @@ article p {
 
 .article2{
     margin-bottom: 40px;
-    background:blueviolet;
+    background:white;
+    border: #07a3f8 solid 10px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -463,6 +488,10 @@ article p {
     height: 450px;
     transition: transform 0.3s ease, filter 0.3s ease;
     margin-top: 10px;
+    padding-bottom: 5px;animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
   
 }
 
@@ -473,7 +502,8 @@ article p {
 
 .article3{
     margin-bottom: 40px;
-    background: yellow;
+    background: #07a3f8;
+    color: white;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -481,7 +511,10 @@ article p {
     height: 450px;
     transition: transform 0.3s ease, filter 0.3s ease;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 10px;animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
  
    
 }
@@ -493,7 +526,8 @@ article p {
 
 .article4{
     margin-bottom: 40px;
-    background:#6178bc;
+    background: white;
+    border: #07a3f8 solid 10px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -501,6 +535,10 @@ article p {
     height: 450px;
     transition: transform 0.3s ease, filter 0.3s ease;
     margin-left: 10px;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
    
 }
 
@@ -513,15 +551,21 @@ ul{
     list-style: none;
 }
 .article5{
-    margin-bottom: 40px;
-    background:#48d3fc;
+    margin-bottom: 50px;
+    background: #07a3f8;
+    color: white;
     border-radius: 10px;
     padding: 20px;
+    margin-left: 20px;
+    padding-bottom: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 450px;
     height: 450px;
     transition: transform 0.3s ease, filter 0.3s ease;
-    
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
 }
 
 
@@ -532,18 +576,25 @@ ul{
 
 .article6{
     margin-bottom: 40px;
-    background:green;
+    background:white;
+    border: #07a3f8 solid 10px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 450px;
     height: 450px;
     transition: transform 0.3s ease, filter 0.3s ease;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
     
 }
 
 .pro p{
-    margin: 50px;
+    margin: 40px;
+    left: 50px;
+   
 }
 .article6:hover{
     transform: scale(1.05);
@@ -554,7 +605,8 @@ ul{
     
     width: 350px;
     height: 350px;
-    box-shadow: 4px 4px black;
+    float: right;
+    margin-left: 10px;
 
 }
 
@@ -600,20 +652,29 @@ ul{
 }
 
 footer {
-    background: #333;
+    background: #07a3f8;
+    display: block;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    margin: 50px;
+    margin: 5px;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
 }
 
-
+ul li a{
+    list-style: none;
+    color: #fff;
+}
 
 form {
-    background-image: linear-gradient(red, blue);
+    background-color: #07a3f8;
+    margin-left: 650px;
+    font-size: 10px;
     width: 300px;
-    margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -691,8 +752,18 @@ form {
     
 }
 
+.di{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
 .di article{
-   background-image: linear-gradient(white, red);
+    background-color: #07a3f8;
+    color: #fff;
     display: block;
     text-align: center;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -702,8 +773,6 @@ form {
     animation-range-end: cover 30%;
     margin: 50px;
 }
-
-
 
 
 
@@ -724,6 +793,12 @@ form {
 
 @media only screen and (min-width: 600px) and (max-width: 1024px){
 
+    .com article{
+        margin-left: 250px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
     .article11{
         margin-bottom: 20px;
     }
@@ -897,7 +972,7 @@ form {
     }
 
     .com article{
-        margin-left: 55px;
+        margin-left: 250px;
         text-align: center;
         margin-top: 10px;
     }
@@ -919,5 +994,20 @@ form {
     header h1{
         margin-right: 40px;
     }
+
+    .pro{
+        display: block;
+    }
+
+    .slider{
+        width: 100%;
+        min-height: 25vh;
+        aspect-ratio: 16/9;
+        background-color: black;
+        position: relative;
+    }
+
+  
+    
 }
     
