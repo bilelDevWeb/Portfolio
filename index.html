@@ -8,21 +8,25 @@
 </head>
 <body>
     <header>
-        <h1>Mon portfolio</h1>
+        <h2>Mon Portfolio</h2>
+        
         <nav>
-            <a href="#A propos de moi" class="ap">A propos de moi</a>
-            <a href="#Mes futures projets" class="fp">Mes futures projets</a>
-            <a href="#compétence" class="co">Compétences</a>
-            <a href="#Mes diplômes" class="dip">Mes diplômes</a>
-            <a href="#Contact" class="con">Contact</a>
+            <a href="#apropos" class="ap">À propos de moi</a>
+            <a href="#projets" class="fp">Mes futurs projets</a>
+            <a href="#competences" class="co">Compétences</a>
+            <a href="#diplomes" class="dip">Mes diplômes</a>
+            <a href="#contact" class="con" class="active">Contact</a>
         </nav>
     </header>
     <main>
         <div class="slider">
-            <img src="img/th.jpg" alt="th.jpg" class="slider-background">
+            <img src="img/AdobeStock.jpg" alt="AdobeStock.jpg" class="slider-background">
             <div class="slider-content">
                 <h1 class="titre">Bilel MENAOUAR</h1>
                 <p>Développeur full-stack</p>
+                <a href="cv/CVBilelMenaouar(3) (2)(1).pdf" download="CVBilelMenaouar(3) (2)(1).pdf">
+                    <button type="button">Télécharger mon cv</button>
+                </a>
             </div>
             
         </div>
@@ -45,124 +49,47 @@
         </section>
 
         <h2 class="ti">Mes projets</h2>
-        <section id="Mes futures projets" class="com">
-            <article class="onepiece">
-                <a href="https://bileldevweb.github.io/onepiece/">
-                    <img src="img/one.jpg" alt="one.jpg" class="one">
-                </a>
-                <p>J'ai créé un site pour les<br>fans de l'animé One Piece</p>
-                
-                <img src="img/HTML5.JPG" alt="HTML5.JPG" class="ht"></li>
-                <img src="img/css.png" alt="css.png" class="cs"></li>
-                
-            </article>
-
-            <article class="pokemons">
-                <a href="https://bileldevweb.github.io/Pok-mon/">
-                    <img src="img/pokemon.jpg" alt="pokemon.jpg" class="pokemon">
-                </a>
-                <p>j'ai réalisé ce projet qui vous permettra d'afficher aléatoirement plusieurs <br>pokémons.</p>
-
-                <img src="img/HTML5.JPG" alt="HTML5.JPG" class="ht">
-                <img src="img/css.png" alt="css.png" class="cs">
-                <img src="img/JavaScript.png" alt="JavaScript.png" class="ht">
-            </article>
-            
-            <article class="todolist">
-                <a href="https://bileldevweb.github.io/t-che/">
-                    <img src="img/todo.jpg" alt="todo.jpg" class="todo">
-                </a>
-                <p>j'ai développé un gestionnaire de tâche pour apprendre le Javascript ou créer un compte GitHub ou répondre au mail.</p>
-
-                <img src="img/HTML5.JPG" alt="HTML5.JPG" class="ht">
-                <img src="img/css.png" alt="css.png" class="cs">
-                <img src="img/JavaScript.png" alt="JavaScript.png" class="ht">
-            </article>
-
-            <article class="todolist">
-                <a href="https://bileldevweb.github.io/Resto/">
-                    <img src="img/resto.jpg" alt="resto.jpg" class="todo">
-                </a>
-                
-                <p>j'ai créé un site d'un restaurant qui propose différents plats.</p>
-
-                <img src="img/HTML5.JPG" alt="HTML5.JPG" class="ht">
-                <img src="img/css.png" alt="css.png" class="cs">
-            </article>
+        <section id="Mes futures projets">
+            <div class="flex wrap gap20 space-between">
+                <div class="w32 realisation">
+                    <a href="https://bileldevweb.github.io/onepiece">
+                        <img src="img/one.jpg" alt="one.jpg">
+                        <h3>Site d'un manga</h3>
+                    </a>
+                </div>
+                <div class="w32 realisation">
+                    <a href="https://bileldevweb.github.io/Pok-mon/">
+                        <img src="img/pokemon.jpg" alt="pokemon.jpg">
+                        <h3>Site de pokémon</h3>
+                    </a>
+                </div>
+                <div class="w32 realisation">
+                    <a href="https://bileldevweb.github.io/todo-list/">
+                        <img src="img/todo.jpg" alt="todo.jpg">
+                        <h3>Une todolist</h3>
+                    </a>
+                </div>
+            </div>
         </section>
+
 
             <h2 class="ti">Mes compétences</h2>
 
-        <section id="compétence" class="grid-container">
-            <article class="article1">
-                <h2 class="l">HTML</h2>
-                <img src="img/HTML5.JPG" alt="HTML5.JPG" class="html">
-                <p><strong>HTML est un langage de balisage utilisé pour structurer et présenter le contenu des pages web.</strong></p>
-            </article>
-        
-        
-            <article class="article2">
-                <h2>CSS</h2>
-                <img src="img/css.png" alt="css.png" class="css">
-                <p><strong>CSS est un langage de style utilisé pour définir l'apparence et la mise en page des pages web.</strong></p>
-            </article>
-        
-
-        
-            <article class="article3">
-                <h2 class="l">Javascript</h2>
-                <img src="img/javascript-logo.png" alt="javascript-logo.png" class="js">
-                <p><strong>JavaScript est un langage de programmation utilisé pour rendre les pages web interactives et dynamiques.</strong></p>
-            </article>
-        
-
-        
-            <article class="article4">
-                <h2>PHP</h2>
-                <img src="img/php.png" alt="php.png" class="php">
-                <p><strong>PHP est un langage de script côté serveur utilisé pour créer des pages web dynamiques et interagir avec des bases de données.</strong></p>
-            </article>
-        
-
-        
-            <article class="article5">
-                <h2 class="l">React</h2>
-                <img src="img/React.png" alt="React.png" class="re">
-                <p><strong>React.js est une bibliothèque JavaScript utilisée pour construire des interfaces utilisateur interactives et réactives.</strong></p>
-            </article>
-        
-
-        
-            <article class="article6">
-                <h2>Node JS</h2>
-                <img src="img/nodejs.png" alt="nodejs.png" class="node">
-                <p><strong>Node.js est un environnement d'exécution JavaScript côté serveur conçu pour créer des applications rapides et évolutives.</strong></p>
-            </article>
-
-            <article class="article7">
-                <h2 class="l">My SQL</h2>
-                <img src="img/SQL.jpg" alt="SQL.jpg" class="sql">
-                <p>MySQL est un système de gestion de bases de données relationnelles utilisé pour stocker, organiser et manipuler des données.</p>
-            </article>
-
-            <article class="article8">
-                <h2>Canva</h2>
-                <img src="img/Canva.png" alt="Canva.png" class="can">
-                <p>Canva est une plateforme en ligne intuitive utilisée pour créer des designs graphiques et des visuels professionnels.</p>
-            </article>
-
-            <article class="article9">
-                <h2 class="l">Webflo</h2>
-                <img src="img/webflow-logo.png" alt="webflow-logo.png" class="web">
-                <p>Webflow est une plateforme de conception web qui permet de créer des sites sans coder, en combinant design visuel et développement.</p>
-            </article>
-
-            <article class="article10">
-                <h2 class="m">Git</h2>
-                <img src="img/Git.png" alt="Git.png" class="gite">
-                <p>Git est un système de contrôle de version permettant de suivre les modifications du code et de collaborer efficacement.</p>
-            </article>
-        </section>
+            <section class="globe-container">
+                <div class="globe">
+                    <div class="globe-item" style="--i:0"><img src="img/HTML5.JPG" alt="HTML"></div>
+                    <div class="globe-item" style="--i:1"><img src="img/css.png" alt="CSS"></div>
+                    <div class="globe-item" style="--i:2"><img src="img/javascript-logo.png" alt="JS"></div>
+                    <div class="globe-item" style="--i:3"><img src="img/php.png" alt="PHP"></div>
+                    <div class="globe-item" style="--i:4"><img src="img/React.png" alt="React"></div>
+                    <div class="globe-item" style="--i:5"><img src="img/nodejs.png" alt="nodejs.png"></div>
+                    <div class="globe-item" style="--i:6"><img src="img/SQL.jpg" alt="SQL.jpg"></div>
+                    <div class="globe-item" style="--i:7"><img src="img/github.jpg" alt="github.jpg"></div>
+                    <div class="globe-item" style="--i:8"><img src="img/webflow-logo.png" alt="webflow-logo.png"></div>
+                    <div class="globe-item" style="--i:9"><img src="img/phpMyAdmin-Logo.png" alt="phpMyAdmin-Logo.png"></div>
+                    
+                </div>
+            </section>
 
         
 
@@ -203,13 +130,7 @@
 
          <button>Envoyer</button>
       </form>
-
-      <div class="cor">
-        <ul>
-            <li>Tel: 06 13 23 23 28</li>
-            <li>Email: bilelmenaouar@outlook.fr</li>
-        </ul>
-      </div>
     </footer>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
